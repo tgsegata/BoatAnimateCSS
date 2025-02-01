@@ -1,0 +1,148 @@
+/* SUN ANIMATION */
+#sun2 {
+    /* animation: name / what is animating / time / type / how many times / delay */
+    animation: sun_pulse_2 4s ease-in-out infinite 1s;
+}
+@keyframes sun_pulse_2 {
+    0% {
+        /* animation to increase the size */
+        opacity: 0;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        /* animation to make the transparency */
+        /* fill: #e2b63300; or, */
+        opacity: 0;
+        r: 145px;
+    }
+}
+#sun1 {
+    animation: sun_pulse_1 4s ease-in-out infinite;
+}
+@keyframes sun_pulse_1 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 0;
+        r: 145px;
+    }
+}
+
+/* SEA ANIMATION */
+#sea { 
+    animation: sea_linear 3s linear infinite alternate 1s;
+}
+@keyframes sea_linear {
+    0% {
+        height: 42vh;
+    }
+}
+
+/* BOAT ANIMATION */
+#boat {
+    background-size: cover;
+    animation: boat_linear 2s ease-in-out infinite alternate;
+}
+@keyframes boat_linear {
+    0% {
+        top: 45%;
+    }
+    100% {
+        top: 50%;
+    }
+}
+#shadow {
+    animation: shadow 2s ease-in-out infinite alternate;
+}
+@keyframes shadow {
+    0% {
+        top: 63%;
+    }
+    100% {
+        top: 69.7%;
+    }
+}
+
+/* CLOUDS ANIMATION */
+.cloud1 {
+    animation: cloud1 20s linear infinite alternate;
+}
+@keyframes cloud1 {
+    100% {
+        left: 60%;
+    }
+}
+.cloud2 {
+    animation: cloud2 20s linear infinite alternate;
+}
+@keyframes cloud2 {
+    100% {
+        left: 75%;
+    }
+}
+.cloud3 {
+    animation: cloud3 20s linear infinite alternate;
+}
+@keyframes cloud3 {
+    100% {
+        left: 58%;
+    }
+}
+.cloud4 {
+    animation: cloud4 20s linear infinite alternate;
+}
+@keyframes cloud4 {
+    100% {
+        left: 94%;
+    }
+}
+.cloud5 {
+    animation: cloud5 20s linear infinite alternate;
+}
+@keyframes cloud5 {
+    100% {
+        left: 90%;
+    }
+}
+
+/* SMOKES ANIMATION */
+.smoke1 {
+    animation: smoke 3.8s linear infinite 3s;
+}
+.smoke2 {
+    animation: smoke 3.8s linear infinite 4s;
+}
+.smoke3 {
+    animation: smoke 4s linear infinite 5s;
+}
+@keyframes smoke {
+    0% {
+        opacity: 0;
+        width: 64px;
+        height: 10px;
+        left: 48.5%;
+    }
+    50% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 15%;
+        width: 200px;
+        height: 33px;
+        left: 30%;
+        top: 12%;
+    }
+    100% {
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+        left: 40%;
+        top: 15%;
+    }
+}
